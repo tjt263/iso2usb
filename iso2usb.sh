@@ -16,7 +16,7 @@ then
 	echo "No further feedback will be provided until the process is complete."
 	echo "Please be patient."
 	echo " "
-	sudo dd if="$ISO" of="$DISK" bs=1M
+	sudo dd if="$ISO" of="$DISK" bs=1048576
 	
 	echo " "
 elif [[ "$#" == 2 ]]
@@ -26,7 +26,7 @@ then
 	echo "No further feedback will be provided until the process is complete."
 	echo "Please be patient."
 	echo " "
-	sudo dd if="$1" of="$2" bs=1M
+	sudo dd if="$1" of="$2" bs=1048576
 	
 	echo " "
 else
