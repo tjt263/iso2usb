@@ -6,17 +6,17 @@ then
 	echo "Interactive Mode.."
 	echo " "
 	echo "Desired ISO Image; File Path: "
-	read ISO
+	read iso
 	echo " "
-	echo "Desired USB Disk; Directory Path: "
-	read DISK
+	echo "Desired USB Drive; Directory Path: "
+	read usb
 ################## [[ $1 == "help" || "-h" || "--help" ||  ]] ##################
 	echo " "
 	echo "Imaging the USB drive. This can take some time. >30min is not unusual."
 	echo "No further feedback will be provided until the process is complete."
 	echo "Please be patient."
 	echo " "
-	sudo dd if="$ISO" of="$DISK" bs=1048576
+	sudo dd if="$iso" of="$usb" bs=1048576
 	
 	echo " "
 elif [[ "$#" == 2 ]]
